@@ -13,6 +13,10 @@ if(formAnswer){
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify(data),
         })
-        
+        const res=await response.json()
+        if(res.message==='success'){
+            document.querySelector(".container").insertAdjacentHTML("beforeend",res.html)
+            
+        }
     })
 }

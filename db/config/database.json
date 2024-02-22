@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "postgres",
-    "database": "quize_flash_cards",
+    "database": "flash_cards",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }

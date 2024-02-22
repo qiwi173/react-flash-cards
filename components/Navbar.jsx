@@ -10,7 +10,7 @@ function Navbar({}) {
         <li>
           <a href="/profile">Profile</a>
         </li>
-        {/*<li>
+        <li>
           {user ? (<a href="/">Привет {user.name}!</a>) : (<a href="/">Привет дорогой друг!</a>)}
         </li>
         {user ? (
@@ -21,7 +21,7 @@ function Navbar({}) {
           <li>
             <a href="/auth/registration">Sign Up</a>
           </li>
-        )}*/}
+        )}
       </ul>
     </nav>
   );

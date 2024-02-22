@@ -11,7 +11,7 @@ function Layout({ title, children }) {
           rel="stylesheet"
         />
         <link rel="stylesheet" href="/styles/" />
-        <script defer src="/scripts/" />
+        <script defer src="/scripts/flash-card.js" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body>

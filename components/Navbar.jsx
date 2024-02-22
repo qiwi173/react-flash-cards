@@ -1,6 +1,6 @@
 const React = require("react");
 
-function Navbar({}) {
+function Navbar({user}) {
   return (
     <nav>
       <ul>

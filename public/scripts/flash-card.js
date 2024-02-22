@@ -1,5 +1,3 @@
-const { post } = require("../../routes/index.router")
-
 const formAnswer= document.querySelector('.formAnswer')
 if(formAnswer){
     formAnswer.addEventListener('submit',async(e)=>{

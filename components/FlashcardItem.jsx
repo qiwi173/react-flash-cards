@@ -5,7 +5,7 @@ function FlashcardItem({ flashcard }) {
     <div className="cardItem" data-id={flashcard.id}>
       <img src={flashcard.img} />
       <p>{flashcard.question}</p>
-      <form>
+      <form className="formAnswer">
         <input type="text" name="answer" />
         <button>Ответить</button>
       </form>

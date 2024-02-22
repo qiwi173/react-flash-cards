@@ -6,6 +6,21 @@ const app = express();
 
 const PORT = 3000;
 
+const indexRouter = require("./routes/index.router");
+const ssr = require("./middleware/ssr");
+
+// читать данные из тела запросов
+app.use(express.urlencoded({ extended: true }));
+// читать JSON-данные из тела запросов
+app.use(express.json());
+
+app.use(ssr);
+
+//подключаем статику
+app.use(express.static(path.join(__dirname, "public")));
+
+app.use("/", indexRouter);
+
 app.listen(PORT, () => {
-   console.log(`Server has been started at port ${PORT}`);
- });
+  console.log(`Server has been started at port ${PORT}`);
+});

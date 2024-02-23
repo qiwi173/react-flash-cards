@@ -7,9 +7,15 @@ router.get("/:id/:questionId", async (req, res) => {
   try {
     const { id } = req.params;
     const { questionId } = req.params;
-    const questions = await Question.findAll({ where: { id: questionId } });
+    const questions = await Question.findAll({
+      where: { id: questionId, categoryId: id },
+    });
 
-    res.send(res.renderComponent(FlashcardPage, { questions }));
+    if (questionId < 5) {
+      res.send(res.renderComponent(FlashcardPage, { questions }));
+    } else {
+      res.redirect("/");
+    }
   } catch ({ message }) {
     res.send(message);
   }

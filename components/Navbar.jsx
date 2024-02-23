@@ -22,6 +22,9 @@ function Navbar({user}) {
             <a href="/auth/registration" className="navbar">Sign Up</a>
           </li>
         )}
+        <li className="score">
+          
+        </li>
       </ul>
     </nav>
   );

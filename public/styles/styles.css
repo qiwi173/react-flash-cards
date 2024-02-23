@@ -132,3 +132,9 @@ button{
    animation-duration: 1s;
    animation-iteration-count: infinite;
 }
+.error-page{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}

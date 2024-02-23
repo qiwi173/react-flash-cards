@@ -6,13 +6,14 @@ const FlashcardPage = require("../../components/FlashcardPage");
 router.get("/:id", async (req, res) => {
   try {
     const { id } = req.params;
+    const user = res.app.locals.user;
     // const { questionId } = req.params;
     const question = await Question.findOne({
       where: { categoryId: id },
     });
 
     if (question) {
-      res.send(res.renderComponent(FlashcardPage, { question }));
+      res.send(res.renderComponent(FlashcardPage, { question, user }));
     } else {
       res.redirect("/");
     }
@@ -24,12 +25,13 @@ router.get("/:id", async (req, res) => {
 router.get("/:id/:questionId", async (req, res) => {
   try {
     const { id } = req.params;
+    const user = res.app.locals.user;
     const { questionId } = req.params;
     const question = await Question.findOne({
       where: { categoryId: id, id: questionId },
     });
     if (question) {
-      res.send(res.renderComponent(FlashcardPage, { question }));
+      res.send(res.renderComponent(FlashcardPage, { question, user }));
     } else {
       res.redirect("/profile");
     }

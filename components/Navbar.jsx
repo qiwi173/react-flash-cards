@@ -23,7 +23,7 @@ function Navbar({user}) {
           </li>
         )}
         <li className="score">
-          
+          {user ? <a>Score: {user.score}</a>:<a></a>}
         </li>
       </ul>
     </nav>

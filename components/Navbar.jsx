@@ -5,21 +5,21 @@ function Navbar({user}) {
     <nav>
       <ul>
         <li>
-          <a href="/">Main</a>
+          <a href="/" className="navbar">Main</a>
         </li>
         <li>
-          <a href="/profile">Profile</a>
+          <a href="/profile" className="navbar">Profile</a>
         </li>
         <li>
-          {user ? (<a href="/">Привет {user.name}!</a>) : (<a href="/">Привет дорогой друг!</a>)}
+          {user ? (<a href="/" className="navbar">Привет {user.name}!</a>) : (<a href="/" className="navbar">Привет дорогой друг!</a>)}
         </li>
         {user ? (
           <li>
-            <a>Logout</a>
+            <a className="navbar">Logout</a>
           </li>
         ) : (
           <li>
-            <a href="/auth/registration">Sign Up</a>
+            <a href="/auth/registration" className="navbar">Sign Up</a>
           </li>
         )}
       </ul>

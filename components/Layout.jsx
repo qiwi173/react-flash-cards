@@ -10,7 +10,7 @@ function Layout({ title, children, user }) {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
-        <link rel="stylesheet" href="/styles/" />
+        <link rel="stylesheet" href="/styles/styles.css" />
         <script defer src="/scripts/flash-card.js" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>

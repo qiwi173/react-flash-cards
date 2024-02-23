@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+   display: flex;
+   background-color: #333; 
+   padding: 10px; 
+   height: 50px;
+   justify-content: space-around;
+   align-items: center;
+ }
+ 
+ ul {
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
+ }
+ 
+ li {
+   display: inline; 
+   margin-right: 20px; /
+ }
+ 
+ a.navbar {
+   text-decoration: none; 
+   color: white; 
+   font-weight: bold; 
+   font-size: 24px; 
+ }
+ 
+ a:hover {
+   color: #ffcc00; 
+ }
+
+ a {
+   text-decoration: none; 
+   color: white; 
+   font-weight: bold; 
+   font-size: 24px; 
+ }
+
+ body{
+   color: white;
+   background-color: #333; 
+ }
+
+ @keyframes backAnimation {
+   0% {
+     background-image: url(../photo/Elegant_Background.jpg);
+   }
+   50% {
+     background-image: url(../photo/Elegant_Background-11.jpg);
+   }
+   100% {
+     background-image: url(../photo/Elegant_Background.jpg);
+   }
+ }
+
+ @keyframes textAnimation{
+   0% {
+      color: black;
+    }
+    50% {
+      color: white;
+    }
+    100% {
+      color: black;
+    }
+ }
+ .main-container{
+   height: 80vh;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-image: url(../photo/Elegant_Background.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   animation-name: backAnimation;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   font-size: 24px;
+}
+
+.container{
+   height: 80vh;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-image: url(../photo/Elegant_Background.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   animation-name: backAnimation;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   font-size: 24px;
+}
+
+input{
+   background-color: blueviolet;
+   font-size: 20px;
+}
+
+button{
+   background-color: cadetblue;
+   font-size: 20px;
+}
+
+.pravilno{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 40px;
+   background-color: green;
+   animation-name: textAnimation;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+}
+
+.ne-pravilno{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 40px;
+   background-color: red;
+   animation-name: textAnimation;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+}
+.error-page{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+.cardItem{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.ThemeCard{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}

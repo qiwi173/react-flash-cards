@@ -10,7 +10,7 @@ module.exports = {
       [
         {
           name: "Программирование",
-          img: "",
+          img: "https://online-courses.education/wp-content/uploads/2023/05/971-870x400.jpg",
           Questions: [
             {
               name: "Что обозначает аббревиатура HTML?",
@@ -20,33 +20,33 @@ module.exports = {
             {
               name: "Какой HTTP-метод используется для отправки данных формы на сервер?",
               answer: "POST",
-              img: "https://www.accommovision.com/wp-content/uploads/2017/11/Posting-to-Social.jpg",
+              img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrFeczAF1lQPGGkQTlVEBaQdATQwF8L0mjFjRrNb-nzGtajgaSGIg5A1yH1x6GmhgG13E&usqp=CAU",
             },
             {
-              name: "Какой символ используется для комментариев в языке программирования HTML?",
+              name: "Какой символы используются для комментариев в языке программирования HTML?",
               answer: "{/**/}",
               img: "https://avatars.mds.yandex.net/i?id=8b753fd588cfa1935785f4f28fcbea4529435002-12523274-images-thumbs&n=13",
             },
             {
               name: "Какие три основных языка программирования используются в веб-разработке?",
               answer: "HTML, CSS, JavaScript",
-              img: "https://ирсиб.рф/wp-content/uploads/2018/10/4-2.jpg",
+              img: "https://westpower.ru/local/templates/wpnew/img/web-dev.jpg",
             },
             {
               name: "Какое свойство в CSS используется для изменения цвета текста?",
               answer: "color",
-              img: "https://xthreadbearx.files.wordpress.com/2012/08/primary-colours1.jpg",
+              img: "https://cdn.britannica.com/62/234462-050-7D5808C6/color-wheels-RYB-RGB.jpg?w=400&h=300&c=crop",
             },
           ],
         },
         {
           name: "Мужские профессии",
-          img: "",
+          img: "https://habrastorage.org/r/w780/getpro/habr/upload_files/b3c/db7/4de/b3cdb74de3a5931cb9f034c28f289059.jpg",
           Questions: [
             {
               name: "Назови профессию",
               answer: "Бармен",
-              img: "https://steamuserimages-a.akamaihd.net/ugc/1760316663334576281/E3CAB24BD143285CE93852927759BEA8CCEC25EF/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true",
+              img: "https://profchoice.ru/wp-content/uploads/2019/12/%D0%91%D0%B0%D1%80%D0%BC%D0%B5%D0%BD-3.jpg",
             },
             {
               name: "Назови профессию",
@@ -54,14 +54,14 @@ module.exports = {
               img: "https://cs13.pikabu.ru/post_img/2024/02/02/9/170688569318723041.jpg",
             },
             {
-              name: "Какое звание у данного персонажа",
-              answer: "Сержант",
-              img: "https://i.ytimg.com/vi/KMcQQcSOCNc/maxresdefault.jpg?7857057827",
+              name: "Назови профессию",
+              answer: "Программист",
+              img: "https://dlacademy.ru/media/page_photos/0000/photo_120.normal.jpg",
             },
             {
               name: "Назови профессию",
               answer: "Шахтер",
-              img: "https://ak.picdn.net/offset/photos/5314abff82359b9a6c407833/large_w/offset_85309.jpg",
+              img: "https://img.gazeta.ru/files3/273/14260273/TASS_333633-pic_32ratio_900x600-900x600-71548.jpg",
             },
             {
               name: "Назови профессию",

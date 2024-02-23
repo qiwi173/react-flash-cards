@@ -4,8 +4,8 @@ function Profile({ title, user }) {
   return (
     <Layout title={title}>
       <div className="main-container">
-        <div>{user.name}</div>
-        <div>{user.score}</div>
+        <div>Name {user.name}</div>
+        <div>Score {user.score}</div>
       </div>
     </Layout>
   );

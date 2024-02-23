@@ -11,7 +11,7 @@ router.post("/:id", async (req, res) => {
     console.log(answer, rightAnswer.answer);
     if (answer === rightAnswer.answer) {
       res.json({ message: "ok" });
-      req.app.locals.user.score += 10;
+      //req.app.locals.user.score += 10;
     } else {
       res.json({ message: "не ок" });
     }

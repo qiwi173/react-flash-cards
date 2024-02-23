@@ -2,13 +2,17 @@ const React = require("react");
 const Layout = require("./Layout");
 const FlashcardItem = require("./FlashcardItem");
 
-function FlashcardPage({ title, flashcard}) {
+function FlashcardPage({ title, questions }) {
+  
   return (
     <Layout title={title}>
       <h1>FlashcardPage</h1>
-      <div className="container">
-      <FlashcardItem flashcard={flashcard}/>
-      </div>
+      {questions.map((question) => (
+        <FlashcardItem question={question}/>
+      ))}
+      <div className="container"></div>
+
+      <div className="pravilno"></div>
     </Layout>
   );
 }

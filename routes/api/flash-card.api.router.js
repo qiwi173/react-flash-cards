@@ -5,17 +5,21 @@ const Congratulations = require("../../components/Congratulations");
 router.post("/:id", async (req, res) => {
   try {
     const { answer } = req.body;
+    console.log(answer);
     const { id } = req.params;
+    console.log(id);
     const rightAnswer = await Question.findOne({ where: { id } });
+    console.log(answer, rightAnswer.answer);
     if (answer === rightAnswer.answer) {
-      const html = res.send(
-        res.renderComponent(Congratulations, { doctype: false })
-      );
-      res.status(201).json({ message: "success", html });
+      
+        res.json({message:'ok'})
+    } else {
+      
+      res.json({message:'не ок'})
     }
   } catch ({ message }) {
     res.status(500).json({ error: message });
   }
 });
 
-module.exports = router
+module.exports = router;

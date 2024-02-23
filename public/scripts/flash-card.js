@@ -18,7 +18,8 @@ if (formAnswer) {
     if (res.message === "ok") {
       document.querySelector(".pravilno").innerHTML = "Правильный ответ";
     } else {
-      document.querySelector(".pravilno").innerHTML = "Оишбка вы даун";
+      document.querySelector(".ne-pravilno").innerHTML =
+        "Это не правильный ответ";
     }
   });
 }

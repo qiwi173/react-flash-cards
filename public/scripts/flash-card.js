@@ -16,9 +16,9 @@ if (formAnswer) {
     });
     const res = await response.json();
     if (res.message === "ok") {
-      document.querySelector('.pravilno').innerHTML= 'Правильный ответ'
+      document.querySelector(".pravilno").innerHTML = "Правильный ответ";
     } else {
-      document.querySelector(".pravilno").innerHTML = 'Оишбка вы даун'
+      document.querySelector(".pravilno").innerHTML = "Оишбка вы даун";
     }
   });
 }

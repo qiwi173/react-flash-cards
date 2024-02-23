@@ -1,18 +1,17 @@
+const { User } = require("../../db/models");
 
-const { User } = require('../../db/models');
+const router = require("express").Router();
 
-const router = require('express').Router();
-
-router.post('/registration', async (req, res) => {
+router.post("/registration", async (req, res) => {
   try {
     const { name, email, password } = req.body;
-    const user = await User.create({ name, email, password });
+    const user = await User.create({ name, email, password, score: 0 });
     if (user) {
       res.app.locals.user = user;
-      res.redirect('/');
+      res.redirect("/");
       return;
     }
-    res.status(400).json({ error: 'Не все поля заполнены' });
+    res.status(400).json({ error: "Не все поля заполнены" });
   } catch ({ message }) {
     res.status(500).json({ error: message });
   }

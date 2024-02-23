@@ -9,6 +9,7 @@ function FlashcardPage({ title, question }) {
         <FlashcardItem question={question} />
       </div>
       <div className="pravilno"></div>
+      <div className="ne-pravilno"></div>
     </Layout>
   );
 }

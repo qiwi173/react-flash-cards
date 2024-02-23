@@ -1,4 +1,4 @@
-const { where } = require("sequelize");
+
 const profile = require("../../components/Profile");
 const router = require("express").Router();
 const { User } = require("../../db/models");

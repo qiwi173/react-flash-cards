@@ -11,7 +11,7 @@ function Navbar({user}) {
           <a href="/profile" className="navbar">Profile</a>
         </li>
         <li>
-          {user ? (<a href="/" className="navbar">Привет {user.name}!</a>) : (<a href="/" className="navbar">Привет дорогой друг!</a>)}
+          {user ? (<a href="/" className="navbar">{user.name}</a>) : (<a href="/" className="navbar"></a>)}
         </li>
         {user ? (
           <li>

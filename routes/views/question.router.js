@@ -31,7 +31,7 @@ router.get("/:id/:questionId", async (req, res) => {
     if (question) {
       res.send(res.renderComponent(FlashcardPage, { question }));
     } else {
-      res.redirect("/");
+      res.redirect("/profile");
     }
   } catch ({ message }) {
     res.send(message);

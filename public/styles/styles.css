@@ -121,3 +121,20 @@ button{
    animation-duration: 1s;
    animation-iteration-count: infinite;
 }
+
+.ne-pravilno{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 40px;
+   background-color: red;
+   animation-name: textAnimation;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+}
+.error-page{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}

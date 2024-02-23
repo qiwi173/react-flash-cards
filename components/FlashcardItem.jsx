@@ -1,13 +1,14 @@
 const React = require("react");
 
-function FlashcardItem({ flashcard }) {
+function FlashcardItem({ question }) {
   return (
-    <div className="cardItem" data-id={flashcard.id}>
-      <img src={flashcard.img} />
-      <p>{flashcard.question}</p>
-      <form className="formAnswer">
+    <div className="cardItem">
+      <img src={question.img} />
+      <p>{question.name}</p>
+      <form className="formAnswer" data-id={question.id}>
         <input type="text" name="answer" />
         <button>Ответить</button>
+        <a href={`/topic/${question.categoryId}/${question.id + 1}`}>далее</a>
       </form>
     </div>
   );

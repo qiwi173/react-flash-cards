@@ -8,7 +8,7 @@ module.exports = {
         name: "Alex",
         email: "alex@mail.ru",
         password: "123",
-
+       score:0
       },
     ]);
   },

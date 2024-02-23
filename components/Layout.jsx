@@ -1,7 +1,7 @@
 const React = require("react");
 const Navbar = require("./Navbar");
 
-function Layout({ title, children }) {
+function Layout({ title, children, user }) {
   return (
     <html lang="ru">
       <head>
@@ -15,7 +15,7 @@ function Layout({ title, children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body>
-        <Navbar  />
+        <Navbar user={user} />
         {children}
       </body>
     </html>

@@ -4,7 +4,7 @@ function ThemePage({ category }) {
   return (
     <div>
       <div>{category.name}</div>
-      <a href={`/topic/${category.id}/${1}`}>Погнали</a>
+      <a href={`/topic/${category.id}`}>Погнали</a>
     </div>
   );
 }

@@ -1,9 +1,12 @@
 const React = require("react");
 const Layout = require("./Layout");
-function Profile({ title }) {
+function Profile({ title, user }) {
   return (
     <Layout title={title}>
-      <div>fdbdbbbdbdbdbdb</div>
+      <div className="main-container">
+        <div>{user.name}</div>
+        <div>{user.score}</div>
+      </div>
     </Layout>
   );
 }
